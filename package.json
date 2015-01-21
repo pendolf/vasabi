@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/pendolf/vasabi/issues"
   },
-  "homepage": "https://github.com/pendolf/vasabi"
+  "homepage": "https://github.com/pendolf/vasabi",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
 }
