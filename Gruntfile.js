@@ -11,6 +11,23 @@ module.exports = function(grunt) {
                 assets: ['<%= project.app %>/assets'],
                 css: ['<%= project.assets %>/sass/style.scss']
             },
+            bowercopy: {
+                options: {
+                    // Bower components folder will be removed afterwards
+                    // clean: true
+                },
+                // JavaScript
+                libs: {
+                    options: {
+                        destPrefix: 'homepage/assets/js/libs'
+                    },
+                    files: {
+                        'jquery.js': 'jquery/dist/jquery.js',
+                        'jquery.typeahead.js': 'jquery-typeahead/jquery.typeahead.js',
+                        'bootstrap.js': 'bootstrap-sass-official/assets/javascripts/bootstrap.js',
+                    }
+                }
+            },
             sass: {
                 dev: {
                     options: {
@@ -30,6 +47,7 @@ module.exports = function(grunt) {
             }
     });    
 
+    grunt.loadNpmTasks('grunt-bowercopy');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
