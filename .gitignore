@@ -2,3 +2,4 @@ node_modules
 npm-debug.log
 homepage/bower_components
 .sass-cache
+homepage/assets/css/style.css.map
