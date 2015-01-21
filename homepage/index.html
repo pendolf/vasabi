@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vasabi.tv</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/jquery.typeahead.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="homepage-header" 
+            style="background: url(http://vasabi.tv/static/img/homepage-top-bg.png?d8b9fbc52066);
+                  height: 336px;
+                  background-position: center;
+                  background-repeat: no-repeat;">
+      <div class="navbar-wrapper">
+        <div class="container">
+          <nav class="navbar navbar-inverse navbar-static-top">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"><img src="http://vasabi.tv/static/img/logo-large.png?d8b9fbc52066" style="width: 100px;"></a>
+              </div>
+
+              <div id="navbar" class="navbar-collapse collapse navbar-left">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">ФИЛЬМЫ</a></li>
+                  <li><a href="#about">СЕРИАЛЫ</a></li>
+                  <li><a href="#contact">БЛОГ</a></li>
+                </ul>
+              </div>
+
+              <form id="search-video" name="search-video" action="" class="navbar-form navbar-right" style="padding-right: 30px">
+                <div class="typeahead-container">
+                  <div class="input-group">
+                    <span class="typeahead-query">
+                    <!-- {% csrf_token %} -->
+                    <input id="q" name="q" class="form-control" type="search" placeholder="Живой поиск" autocomplete="off">
+                    </span>
+<!--                     <span class="input-group-btn">
+                      <button type="submit" class="btn btn-default typeahead-button">
+                        <span class="glyphicon glyphicon-search"></span>
+                      </button>
+                    </span> -->
+                  </div>
+                </div>
+              </form>
+          </nav>
+
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+              <p class="h3 text-uppercase text-danger text-center">Vasabi.tv - лучшие фильмы и видео с субтитрами онлайн!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="site-content">
+
+      <div class="container-fluid">
+        <div class="collage-tags"> <!-- collage-of-posters -->
+<!--           <img src="http://vasabi.tv/static/img/tags/filler1.jpg">
+          <img src="http://vasabi.tv/static/img/tags/filler2.jpg">
+          <img src="http://vasabi.tv/static/img/tags/filler3.jpg">
+          <img src="http://vasabi.tv/static/img/tags/filler4.jpg"> -->
+          <a href="/video/in_english/">
+              <img src="http://vasabi.tv/static/img/tags/in_english.png">
+              <!-- <span>#на английском</span> -->
+          </a>
+          <a href="/video/humour/">
+              <img src="http://vasabi.tv/static/img/tags/humor.png">
+              <!-- <span>#юмор</span> -->
+          </a>
+          <a href="/video/tvshow/">
+              <img src="http://vasabi.tv/static/img/tags/tv_show.png">
+              <!-- <span>#ТВ ШОУ</span> -->
+          </a>
+          <a href="/video/documental/">
+              <img src="http://vasabi.tv/static/img/tags/documentary.png">
+              <!-- <span>#документал...</span> -->
+          </a>
+          <!-- <img src="http://vasabi.tv/static/img/tags/filler9.jpg"> -->
+
+          <a href="/video/korean/">
+              <img src="http://vasabi.tv/static/img/tags/korean.png">
+              <!-- <span>#корейские</span> -->
+          </a>
+          <a href="/video/turkish/">
+              <img src="http://vasabi.tv/static/img/tags/turkish.png">
+              <!-- <span>#турецкие</span> -->
+          </a>
+          <a href="/video/science/">
+              <img src="http://vasabi.tv/static/img/tags/science.png">
+              <!-- <span>#научные</span> -->
+          </a>
+          <a href="/video/education/">
+              <img src="http://vasabi.tv/static/img/tags/education.png">
+              <!-- <span>#образование</span> -->
+          </a>
+          <!-- <img src="http://vasabi.tv/static/img/tags/filler3.jpg"> -->
+
+          <a href="/video/movie/">
+              <img src="http://vasabi.tv/static/img/tags/movies.png">
+              <!-- <span>#художественные</span> -->
+          </a>
+          <a href="/video/series/">
+              <img src="http://vasabi.tv/static/img/tags/series.png">
+              <!-- <span>#cериалы</span> -->
+          </a>
+          <a href="/video/sitcom/">
+              <img src="http://vasabi.tv/static/img/tags/sitcom.png">
+              <!-- <span>#СИТКОМ</span> -->
+          </a>
+<!--           <img src="http://vasabi.tv/static/img/tags/filler8.jpg">
+          <img src="http://vasabi.tv/static/img/tags/filler5.jpg">
+          <img src="http://vasabi.tv/static/img/tags/filler6.png">
+          <img src="http://vasabi.tv/static/img/tags/filler7.jpg">
+          <img src="http://vasabi.tv/static/img/tags/filler9.jpg"> -->
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="container">
+        <div class="video-posters">
+            <p class="text-center text-uppercase h2 text-success">Видео</h2>
+            <p class="text-center text-uppercase">
+              <a href="#"><span class="glyphicon glyphicon-certificate" aria-hidden="true"></span> Новые</a>
+              &nbsp
+              &nbsp
+              <a href="#"><span class="glyphicon glyphicon-star" aria-hidden="false"></span> Популярные видео</a>
+              &nbsp
+              &nbsp
+              <a href="#"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> Рекомендуем</a>
+            </p>
+          <hr/>
+
+          <div class="row">
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+          </div>
+          <br/>
+
+          <div class="row">
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+          </div>
+          <br/>
+
+          <div class="row">
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+            <div class="col-md-3">
+              <a href="#"><img src="http://vasabi.tv/media/posters/thumb_MV5BNjc1NzYwODEyMV5BMl5BanBnXkFtZTcwNTcxMzU1MQ__._V1._SX640_SY870_.jpeg.226x311_q95_autocrop_crop-smart.jpg"></a>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">         
+            <div class="col-md-2 col-md-offset-5">
+              <a class="btn btn-danger text-uppercase" href="#" role="button">Еще Видео</a>
+            </div>
+          </div>
+          
+        </div> <!-- /.video-posters -->
+      </div>
+      <hr>
+
+      <div class="container">
+        <div class="news">
+          <p class="text-center h1 text-uppercase text-success">Что предлагает Vasabi</p>
+          <br/>
+          <div class="row">
+            <div class="col-md-3">
+              <img src="http://vasabi.tv/static/img/six_blocks/watch-with-subtitles.png?d8b9fbc52066">
+              <h3 class="text-uppercase text-info">Просмотр фильмов с субтитрами</h3>
+              <div class="text-left">
+                <p>Любителям фильмов в оригинальном звучании, проект Vasabi предоставляет отличную возможность смотреть кино, сериалы, мультфильмы и ТВ программы с субтитрами.</p>
+                <p>Ведь никакой дубляж не передаст истинную атмосферу и настроение оригинального звучания фильма! Смотрите видео на ваш вкус с субтитрами или без них и следите за ежедневным добавлением новинок на Vasabi.tv!</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="http://vasabi.tv/static/img/six_blocks/for-any-taste.png?d8b9fbc52066">
+              <h3 class="text-uppercase text-info">Кино, сериалы, видео на любой вкус</h3>
+              <div class="text-left">
+                <p>Наш проект Vasabi.tv предлагает вам неограниченный и ежедневно пополняемый выбор кино онлайн: здесь представлены практически все жанры.</p>
+                <p>От ТВ-шоу, спортивных и познавательных передач и каналов на любой вкус, до сериалов и кинофильмов, как художественных, так и документальных.</p>
+                <p>Детское кино, мультфильмы, развлекательные программы и передачи онлайн, семейные просмотры – все самое лучшее и новое со съемочных площадок и киностудий всего мира.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="http://vasabi.tv/static/img/six_blocks/learn-english-and-other-languages.png?d8b9fbc52066">
+              <h3 class="text-uppercase text-info">Изучение английского и других языков</h3>
+              <div class="text-left">
+                <p>Просмотр фильмов онлайн на языке оригинала, с субтитрами или без, дает великолепные новые возможности тем, кто изучает иностранный язык самостоятельно.</p>
+                <p>Оттачивайте произношение, пополняйте словарный запас, заучивайте новые фразы, обороты речи, расстановку ударений и модуляцию произносимого текста.</p>
+                <p>И просто смотрите хорошее кино в оригинале, с прямым актерским звучанием диалогов, не испорченное дубляжом.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <img src="http://vasabi.tv/static/img/six_blocks/create-own-subtitles.png?d8b9fbc52066">
+              <h3 class="text-uppercase text-info">Создание своих субтитров</h3>
+              <div class="text-left">
+                <p>Необычные новые возможности предоставляет вам проект Vasabi.tv – кроме просмотра интереснейших фильмов и видео онлайн, вы можете теперь создать собственные субтитры к иностранным фильмам без перевода.</p>
+                <p>Причем без необходимости скачивания каких-либо дополнительных специальных программ, а напрямую в браузере: удобно, быстро, легко и интересно.</p>
+                <p>Кино наше – субтитры ваши!</p>
+              </div>
+            </div>
+          </div>
+        </div> <!-- /.news -->
+      </div> <!-- /.container -->
+      <hr/>
+
+      <div class="container">
+        <div class="blog-news">
+          <p class="text-center h1 text-uppercase text-danger">Блог</p>
+          <br/>
+          <div class="row">
+            <div class="col-md-4 col-md-offset-1">
+              <img src="http://vasabi.tv/media/blogs/pisc-27.jpg.420x420_q95_autocrop_crop-smart.jpg">
+              <br/>
+              <br/>
+              <p><a href="#">Сериал "Агенты "Щ.И.Т."</a></p>
+              <p><a class="btn btn-success" href="#" role="button">Читать</a></p>
+            </div>
+            <div class="col-md-4 col-md-offset-1">
+              <img src="http://vasabi.tv/media/blogs/pisc-28.jpg.420x420_q95_autocrop_crop-smart.jpg">
+              <br/>
+              <br/>
+              <p><a href="#">7 самых популярных американских реалити-шоу</a></p>
+              <p><a class="btn btn-success" href="#" role="button">Читать</a></p>
+            </div>
+          </div>
+          <p class="pull-right"><a href="#">Все записи (78)</a></p>
+        </div> <!-- /.blog-news -->
+      </div> <!-- /.container -->
+      <hr/>
+
+      <div class="container">
+        <div class="community-groups">
+          <p class="text-center h1 text-uppercase text-success">Присоединяйтесь!</p>
+          <br/>
+          <div class="row">
+            <div class="col-md-3 col-md-offset-1">
+              <img src="http://i.gyazo.com/b202227789f7a2e79810ea71aff46056.png">
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+              <img src="http://i.gyazo.com/f6aaac6992eb7445505666b4192ce1fb.png">
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+              <img src="http://i.gyazo.com/a609c4965bb51c5dd2b661bed888c69f.png">
+            </div>
+          </div>
+        </div>
+      </div> <!-- /.container -->
+      <hr/>
+
+    </div> <!-- /.site-content -->
+
+
+    <footer>
+      <div class="container">
+        <img src="http://vasabi.tv/static/img/footer/thefarm_logo.png" class="pull-right">
+        <img src="http://vasabi.tv/static/img/logo-micro.png?d8b9fbc52066">
+        <p>© 2015 Vasabi
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </p>
+      </div>
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery.typeahead.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
