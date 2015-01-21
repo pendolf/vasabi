@@ -26,6 +26,11 @@ module.exports = function(grunt) {
                         'jquery.typeahead.js': 'jquery-typeahead/jquery.typeahead.js',
                         'bootstrap.js': 'bootstrap-sass-official/assets/javascripts/bootstrap.js',
                     }
+                },
+                fonts: {
+                    files: {
+                        'homepage/assets/fonts/bootstrap': 'bootstrap-sass-official/assets/fonts/bootstrap'
+                    }
                 }
             },
             sass: {
@@ -52,6 +57,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     grunt.registerTask('default', [
+                       'bowercopy',
                        'watch'
     ]);
 
