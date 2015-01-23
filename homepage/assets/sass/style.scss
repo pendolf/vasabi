@@ -2,6 +2,24 @@ $v_teal: #13CC98;
 $v_red: #E34F42;
 $v_blue: #339AB8;
 $v_grey: #999999;
+$v_white: #FFFFFF;
+
+@font-face {
+  font-family: 'Intro';
+  font-weight: 400;
+  src: url('fonts/intro-webfont.eot'),
+       url('fonts/intro-webfont.woff') format('woff'),
+       url('fonts/intro-webfont.svg') format('svg');
+}
+$font-family-headers: 'Intro', serif;
+$font-family-base: 'Ubuntu', sans-serif;
+
+$navbar-border-radius: 0;
+$navbar-height: 60px;
+$navbar-inverse-link-color: $v_white;
+
+
+@import 'bootstrap';
 
 .homepage-header {
   background: url(http://business3puntozero.com/wp-content/uploads/2014/07/background-header.jpg);
@@ -10,16 +28,12 @@ $v_grey: #999999;
   background-repeat: no-repeat;
 }
 
-.navbar {
-  border-radius: 0px; 
-}
-
 .navbar-brand img {
   width: 70px;
 }
 
-.navbar-inverse .navbar-nav > li > a {
-  color: #FFFFFF;
+.navbar {
+  @include gradient-vertical(#0c1e2a, #2b2d44);
 }
 
 .enter {
@@ -85,7 +99,6 @@ $v_grey: #999999;
     -moz-text-shadow: 0 1px 0 rgba(0,0,0,0.75);
     -webkit-text-shadow: 0 1px 0 rgba(0,0,0,0.75);
 }
-
 
 /*------------------------------------*\
     INPUT, BUTTON & DROPDOWN

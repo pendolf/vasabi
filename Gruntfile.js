@@ -53,7 +53,6 @@ module.exports = function(grunt) {
                         compass: false
                     },
                     files: {
-                        '<%= project.assets %>/css/bootstrap.css':'<%= project.assets %>/sass/bootstrap.scss',
                         '<%= project.assets %>/css/style.css':'<%= project.css %>'
                     }
                 }
