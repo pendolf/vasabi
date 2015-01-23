@@ -1,5 +1,6 @@
 $vasabi-grey: #999999;
 $vasabi-white: #FFFFFF;
+$vasabi-purple: #8787C1;
 
 $vasabi-primary: #13CC98 !important;
 $vasabi-info: #339AB8;
@@ -45,11 +46,7 @@ $brand-success: #13CC98;
   color: $vasabi-grey;
 }
 
-.video-link > a:hover {
-  color: $vasabi-info;
-}
-
-.video-link-active {
+.video-link > a:hover, .video-link-active {
   color: $vasabi-info;
 }
 
@@ -111,6 +108,19 @@ header {
 footer {
   @include gradient-vertical(#0c1e2a, #2b2d44);
   color: $vasabi-white;
+  padding: 20px 0 20px 0;
+}
+
+.footer-tags {
+  padding-top: 10px; 
+}
+
+.footer-tags a {
+  color: $vasabi-purple;
+}
+
+.footer-tags a:hover {
+  color: darken($vasabi-purple, 20%)
 }
 
 /*------------------------------------*\
@@ -227,9 +237,6 @@ footer {
 .typeahead-result > ul > li.typeahead-group a {
     background-color: $vasabi-primary;
     @include gradient-vertical(#46e6b9, #13CC98, 0%, 100%);
-
-    // background: -webkit-linear-gradient(top, #46e6b9 0, #13CC98 100%);
-    // background: linear-gradient(to bottom, #46e6b9 0, #13CC98 100%);
     font-size: 13px;
     color: #fff;
     text-transform: uppercase;

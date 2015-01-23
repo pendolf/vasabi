@@ -7137,11 +7137,7 @@ button.close {
   color: #999999;
 }
 
-.video-link > a:hover {
-  color: #339AB8;
-}
-
-.video-link-active {
+.video-link > a:hover, .video-link-active {
   color: #339AB8;
 }
 
@@ -7211,6 +7207,19 @@ footer {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0C1E2A', endColorstr='#FF2B2D44', GradientType=0);
   color: #FFFFFF;
+  padding: 20px 0 20px 0;
+}
+
+.footer-tags {
+  padding-top: 10px;
+}
+
+.footer-tags a {
+  color: #8787C1;
+}
+
+.footer-tags a:hover {
+  color: #4d4d95;
 }
 
 /*------------------------------------*\
