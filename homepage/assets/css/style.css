@@ -132,6 +132,21 @@ INPUT, BUTTON & DROPDOWN
   color: #777;
 }
 
+.homepage-header {
+  background: url(http://business3puntozero.com/wp-content/uploads/2014/07/background-header.jpg);
+  height: 336px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar-brand img {
+  width: 70px;
+}
+
+.video-posters, .series-posters {
+  background-color: #EEEEEE;
+}
+
 .poster-header {
   background: none no-repeat scroll 0 0 #13CC98;
   bottom: 14%;
