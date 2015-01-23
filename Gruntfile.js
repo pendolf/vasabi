@@ -19,17 +19,30 @@ module.exports = function(grunt) {
                 // JavaScript
                 libs: {
                     options: {
-                        destPrefix: 'homepage/assets/js/libs'
+                        destPrefix: '<%= project.assets %>/js/libs'
                     },
                     files: {
-                        'jquery.js': 'jquery/dist/jquery.js',
-                        'jquery.typeahead.js': 'jquery-typeahead/jquery.typeahead.js',
-                        'bootstrap.js': 'bootstrap-sass-official/assets/javascripts/bootstrap.js',
+                        'jquery.js':'jquery/dist/jquery.js',
+                        'jquery.typeahead.js':'jquery-typeahead/jquery.typeahead.js',
+                        'bootstrap.js':'bootstrap-sass-official/assets/javascripts/bootstrap.js',
                     }
                 },
                 fonts: {
                     files: {
-                        'homepage/assets/fonts/bootstrap': 'bootstrap-sass-official/assets/fonts/bootstrap'
+                        '<%= project.assets %>/fonts/bootstrap':'bootstrap-sass-official/assets/fonts/bootstrap'
+                    }
+                },
+                bootstrap_sass_dir: {
+                    files: {
+                        '<%= project.assets %>/sass/bootstrap':'bootstrap-sass-official/assets/stylesheets/bootstrap'
+                    }
+                },
+                bootstrap_sass_style: {
+                    options: {
+                        destPrefix: '<%= project.assets %>/sass'
+                    },
+                    files: {
+                        'bootstrap.scss':'bootstrap-sass-official/assets/stylesheets/_bootstrap.scss'
                     }
                 }
             },
@@ -40,6 +53,7 @@ module.exports = function(grunt) {
                         compass: false
                     },
                     files: {
+                        '<%= project.assets %>/css/bootstrap.css':'<%= project.assets %>/sass/bootstrap.scss',
                         '<%= project.assets %>/css/style.css':'<%= project.css %>'
                     }
                 }
@@ -50,7 +64,7 @@ module.exports = function(grunt) {
                     tasks: ['sass:dev']
                 }
             }
-    });    
+    });
 
     grunt.loadNpmTasks('grunt-bowercopy');
     grunt.loadNpmTasks('grunt-contrib-sass');
