@@ -1,9 +1,9 @@
-$brand_grey: #999999;
-$brand_white: #FFFFFF;
+$vasabi-grey: #999999;
+$vasabi-white: #FFFFFF;
 
-$brand-primary: #13CC98;
-$brand-info: #339AB8;
-$brand-danger: #E34F42;
+$vasabi-primary: #13CC98 !important;
+$vasabi-info: #339AB8;
+$vasabi-danger: #E34F42 !important;
 
 @font-face {
   font-family: 'Intro';
@@ -17,18 +17,42 @@ $font-family-headers: 'Intro', serif;
 $font-family-base: 'Ubuntu', sans-serif;
 $headings-font-family: $font-family-headers;
 
+$link-hover-decoration: none;
+
 $navbar-border-radius: 0;
 $navbar-height: 60px;
-$navbar-inverse-link-color: $brand-white;
+$navbar-inverse-link-color: $vasabi-white;
 
 
 @import 'bootstrap';
 
-.homepage-header {
+.text-red {
+  color: $vasabi-danger;
+}
+
+.text-blue {
+  color: $vasabi-info;
+}
+
+.text-primary {
+  color: $vasabi-primary;
+}
+
+.header-tag {
+  padding: 10px;
+  background-color: $vasabi-info;
+  font-size: 100%;
+  border-radius: 20px;
+  font-family: $font-family-base;
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+
+header {
   background: url(http://business3puntozero.com/wp-content/uploads/2014/07/background-header.jpg);
-  height: 336px;
   background-position: center;
   background-repeat: no-repeat;
+  padding-bottom: 40px;
 }
 
 .navbar-brand img {
@@ -39,25 +63,17 @@ $navbar-inverse-link-color: $brand-white;
   @include gradient-vertical(#0c1e2a, #2b2d44);
 }
 
-.enter {
-  color: $brand-danger !important;
-}
-
-.lang {
-  color: $brand-primary !important;
-}
-
 .video-posters, .series-posters {
   background-color: #EEEEEE; 
 }
 
 .poster-header {
-  background: none no-repeat scroll 0 0 $brand-primary;
+  background: none no-repeat scroll 0 0 $vasabi-primary;
   bottom: 14%;
   left: 10%;
   padding: 5px;
   position: absolute;
-  color: $brand_white;
+  color: $vasabi-white;
   font-family: ubuntulight, serif;
   text-transform: uppercase;
   max-width: 230px;
@@ -65,16 +81,21 @@ $navbar-inverse-link-color: $brand-white;
 }
 
 .poster-lang {
-  background: none repeat scroll 0 0 $brand-danger;
+  background: none repeat scroll 0 0 $vasabi-danger;
     top: 84%;
     left: 10%;
     position: absolute;
     padding: 5px;
-    color: $brand_white;
+    color: $vasabi-white;
 }
 
 .thumbnail{
     position:relative;
+}
+
+footer {
+  @include gradient-vertical(#0c1e2a, #2b2d44);
+  color: $vasabi-white;
 }
 
 /*------------------------------------*\
@@ -189,7 +210,7 @@ $navbar-inverse-link-color: $brand-white;
 }
 
 .typeahead-result > ul > li.typeahead-group a {
-    background-color: $brand-primary;
+    background-color: $vasabi-primary;
     @include gradient-vertical(#46e6b9, #13CC98, 0%, 100%);
 
     // background: -webkit-linear-gradient(top, #46e6b9 0, #13CC98 100%);
