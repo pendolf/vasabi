@@ -1,13 +1,67 @@
-/*------------------------------------*\
-    CONTENTS
-\*------------------------------------*/
-/*
-LAYOUT
-INPUT, BUTTON & DROPDOWN
-*/
+$v_teal: #13CC98;
+$v_red: #E34F42;
+$v_blue: #339AB8;
+$v_grey: #999999;
+
+.homepage-header {
+  background: url(http://business3puntozero.com/wp-content/uploads/2014/07/background-header.jpg);
+  height: 336px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  border-radius: 0px; 
+}
+
+.navbar-brand img {
+  width: 70px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #FFFFFF;
+}
+
+.enter {
+  color: $v_red !important;
+}
+
+.lang {
+  color: $v_teal !important;
+}
+
+.video-posters, .series-posters {
+  background-color: #EEEEEE; 
+}
+
+.poster-header {
+  background: none no-repeat scroll 0 0 $v_teal;
+  bottom: 14%;
+  left: 10%;
+  padding: 5px;
+  position: absolute;
+  color: #FFFFFF;
+  font-family: ubuntulight, serif;
+  text-transform: uppercase;
+  max-width: 230px;
+  display: inline;
+}
+
+.poster-lang {
+  background: none repeat scroll 0 0 $v_red;
+    top: 84%;
+    left: 10%;
+    position: absolute;
+    padding: 5px;
+    color: #FFFFFF;
+}
+
+.thumbnail{
+    position:relative;
+}
 
 /*------------------------------------*\
-    LAYOUT
+    Typeahead style
 \*------------------------------------*/
 
 .typeahead-container {
@@ -71,11 +125,12 @@ INPUT, BUTTON & DROPDOWN
     /*width: 100%;*/
     /*margin: 0;*/
     /*vertical-align: middle;*/
-    border: 1px solid rgba(0, 0, 0, 0.15);
+    border: 0px solid rgba(0, 0, 0, 0.15);
 }
 
 .typeahead-button {
     border-radius: 0;
+    border: 0;
 }
 .typeahead-result > .dropdown-menu {
     border-radius: 0;
@@ -133,51 +188,4 @@ INPUT, BUTTON & DROPDOWN
 .typeahead-result > ul > li > a small {
     padding-left: 8px;
     color: #777;
-}
-
-
-$v_teal: #13CC98;
-$v_red: #E34F42;
-$v_blue: #339AB8;
-$v_grey: #999999;
-
-.homepage-header {
-  background: url(http://business3puntozero.com/wp-content/uploads/2014/07/background-header.jpg);
-  height: 336px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.navbar-brand img {
-  width: 70px;
-}
-
-.video-posters, .series-posters {
-  background-color: #EEEEEE; 
-}
-
-.poster-header {
-  background: none no-repeat scroll 0 0 $v_teal;
-  bottom: 14%;
-  left: 10%;
-  padding: 5px;
-  position: absolute;
-  color: #FFFFFF;
-  font-family: ubuntulight, serif;
-  text-transform: uppercase;
-  max-width: 230px;
-  display: inline;
-}
-
-.poster-lang {
-  background: none repeat scroll 0 0 $v_red;
-    top: 84%;
-    left: 10%;
-    position: absolute;
-    padding: 5px;
-    color: #FFFFFF;
-}
-
-.thumbnail{
-    position:relative;
 }
