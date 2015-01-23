@@ -7133,6 +7133,18 @@ button.close {
   color: #13CC98 !important;
 }
 
+.video-link a {
+  color: #999999;
+}
+
+.video-link > a:hover {
+  color: #339AB8;
+}
+
+.video-link-active {
+  color: #339AB8;
+}
+
 .header-tag {
   padding: 10px;
   background-color: #339AB8;

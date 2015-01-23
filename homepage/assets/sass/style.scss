@@ -38,6 +38,18 @@ $navbar-inverse-link-color: $vasabi-white;
   color: $vasabi-primary;
 }
 
+.video-link a {
+  color: $vasabi-grey;
+}
+
+.video-link > a:hover {
+  color: $vasabi-info;
+}
+
+.video-link-active {
+  color: $vasabi-info;
+}
+
 .header-tag {
   padding: 10px;
   background-color: $vasabi-info;
