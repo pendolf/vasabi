@@ -1,22 +1,25 @@
-$v_teal: #13CC98;
-$v_red: #E34F42;
-$v_blue: #339AB8;
-$v_grey: #999999;
-$v_white: #FFFFFF;
+$brand_grey: #999999;
+$brand_white: #FFFFFF;
+
+$brand-primary: #13CC98;
+$brand-info: #339AB8;
+$brand-danger: #E34F42;
 
 @font-face {
   font-family: 'Intro';
   font-weight: 400;
-  src: url('fonts/intro-webfont.eot'),
-       url('fonts/intro-webfont.woff') format('woff'),
-       url('fonts/intro-webfont.svg') format('svg');
+  src: url('../fonts/intro-webfont.eot'),
+       url('../fonts/intro-webfont.woff') format('woff'),
+       url('../fonts/intro-webfont.svg') format('svg');
 }
 $font-family-headers: 'Intro', serif;
+
 $font-family-base: 'Ubuntu', sans-serif;
+$headings-font-family: $font-family-headers;
 
 $navbar-border-radius: 0;
 $navbar-height: 60px;
-$navbar-inverse-link-color: $v_white;
+$navbar-inverse-link-color: $brand-white;
 
 
 @import 'bootstrap';
@@ -37,11 +40,11 @@ $navbar-inverse-link-color: $v_white;
 }
 
 .enter {
-  color: $v_red !important;
+  color: $brand-danger !important;
 }
 
 .lang {
-  color: $v_teal !important;
+  color: $brand-primary !important;
 }
 
 .video-posters, .series-posters {
@@ -49,12 +52,12 @@ $navbar-inverse-link-color: $v_white;
 }
 
 .poster-header {
-  background: none no-repeat scroll 0 0 $v_teal;
+  background: none no-repeat scroll 0 0 $brand-primary;
   bottom: 14%;
   left: 10%;
   padding: 5px;
   position: absolute;
-  color: #FFFFFF;
+  color: $brand_white;
   font-family: ubuntulight, serif;
   text-transform: uppercase;
   max-width: 230px;
@@ -62,12 +65,12 @@ $navbar-inverse-link-color: $v_white;
 }
 
 .poster-lang {
-  background: none repeat scroll 0 0 $v_red;
+  background: none repeat scroll 0 0 $brand-danger;
     top: 84%;
     left: 10%;
     position: absolute;
     padding: 5px;
-    color: #FFFFFF;
+    color: $brand_white;
 }
 
 .thumbnail{
@@ -186,9 +189,11 @@ $navbar-inverse-link-color: $v_white;
 }
 
 .typeahead-result > ul > li.typeahead-group a {
-    background-color: #46e6b9;
-    background: -webkit-linear-gradient(top, #46e6b9 0, #13CC98 100%);
-    background: linear-gradient(to bottom, #46e6b9 0, #13CC98 100%);
+    background-color: $brand-primary;
+    @include gradient-vertical(#46e6b9, #13CC98, 0%, 100%);
+
+    // background: -webkit-linear-gradient(top, #46e6b9 0, #13CC98 100%);
+    // background: linear-gradient(to bottom, #46e6b9 0, #13CC98 100%);
     font-size: 13px;
     color: #fff;
     text-transform: uppercase;
