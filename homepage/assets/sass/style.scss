@@ -81,9 +81,9 @@ header {
 
 .poster-title {
   position: absolute;
-  bottom: 34px;
+  bottom: 30px;
   left: 34px;
-  max-width: 70%;
+  max-width: 75%;
   margin-bottom: 15px;
 }
 
@@ -100,7 +100,7 @@ header {
 
 .poster-language {
   position: absolute;
-  top: 326px;
+  top: 345px;
   left: 30px;
 }
 
@@ -142,26 +142,55 @@ footer {
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-/*@media (min-width: @screen-sm-min) {}*/
+@media (min-width: $screen-sm-min) {
+  .poster-title { 
+    max-width: 68%;
+    margin-bottom: 8px;
+ }
+  .poster-title > h4 { 
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .poster-language { top: 184px; }
+  .poster-language > p { font-size: 10px; }
+}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
-  // .poster-header {
-  //   bottom: 60px;
-  //   left: 10px;
-  //   padding: 4px 6px;
-  //   font: 16px $font-family-base;
-  // }
-
-  // .poster-lang {
-  //   bottom: 20px;
-  //   left: 26px;
-  //   padding: 4px 4px;
-  // }
+  .poster-title { 
+    max-width: 74%;
+    margin-bottom: 15px;
+  }
+  .poster-title > h4 { 
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .poster-language { top: 258px; }
+  .poster-language > p { font-size: 12px; }
 }
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: $screen-lg-min) {}
+// Large devices (large desktops, 1200px and up)
+@media (min-width: $screen-lg-min) {
+  .poster-title {
+    bottom: 30px;
+    left: 34px;
+    max-width: 70%;
+    margin-bottom: 15px;
+  }
+
+  .poster-title > h4 {
+    font: 16px $font-family-base;
+    line-height: 24px;
+  }
+
+  .poster-language {
+    top: 326px;
+  }
+
+  .poster-language > p {
+    font: 14px $font-family-base;
+  }
+}
 
 /*------------------------------------*\
     Typeahead style

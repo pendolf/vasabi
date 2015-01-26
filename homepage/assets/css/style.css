@@ -7176,9 +7176,9 @@ header {
 
 .poster-title {
   position: absolute;
-  bottom: 34px;
+  bottom: 30px;
   left: 34px;
-  max-width: 70%;
+  max-width: 75%;
   margin-bottom: 15px;
 }
 
@@ -7195,7 +7195,7 @@ header {
 
 .poster-language {
   position: absolute;
-  top: 326px;
+  top: 345px;
   left: 30px;
 }
 
@@ -7240,9 +7240,66 @@ footer {
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
-/*@media (min-width: @screen-sm-min) {}*/
+@media (min-width: 768px) {
+  .poster-title {
+    max-width: 68%;
+    margin-bottom: 8px;
+  }
+
+  .poster-title > h4 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .poster-language {
+    top: 184px;
+  }
+
+  .poster-language > p {
+    font-size: 10px;
+  }
+}
 /* Medium devices (desktops, 992px and up) */
-/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 992px) {
+  .poster-title {
+    max-width: 74%;
+    margin-bottom: 15px;
+  }
+
+  .poster-title > h4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .poster-language {
+    top: 258px;
+  }
+
+  .poster-language > p {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .poster-title {
+    bottom: 30px;
+    left: 34px;
+    max-width: 70%;
+    margin-bottom: 15px;
+  }
+
+  .poster-title > h4 {
+    font: 16px "Ubuntu", sans-serif;
+    line-height: 24px;
+  }
+
+  .poster-language {
+    top: 326px;
+  }
+
+  .poster-language > p {
+    font: 14px "Ubuntu", sans-serif;
+  }
+}
 /*------------------------------------*\
     Typeahead style
 \*------------------------------------*/
