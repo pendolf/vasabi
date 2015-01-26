@@ -7242,7 +7242,7 @@ footer {
 }
 
 .h4 {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -7276,7 +7276,7 @@ footer {
   }
 
   .h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
@@ -7304,7 +7304,7 @@ footer {
   }
 
   .h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 @media (min-width: 1200px) {
@@ -7332,8 +7332,12 @@ footer {
     font: 14px "Ubuntu", sans-serif;
   }
 
+  .h1 {
+    font-size: 36px;
+  }
+
   .h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 /*------------------------------------*\

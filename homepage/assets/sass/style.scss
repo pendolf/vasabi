@@ -142,7 +142,7 @@ footer {
   font-size: 28px;
 }
 .h4 {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 /* Extra small devices (phones, less than 768px) */
@@ -169,9 +169,8 @@ footer {
     font-size: 36px;
   }
   .h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
-
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -196,7 +195,7 @@ footer {
     font-size: 36px;
   }
   .h4 {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 
@@ -228,12 +227,10 @@ footer {
   }
 
   .h1 {
-    $font-size-h1: floor(($font-size-base * 2.6));
-    // font-size: 36px;
+    font-size: 36px;
   }
   .h4 {
-    $font-size-h4: ceil(($font-size-base * 1.25));
-    // font-size: 14px;
+    font-size: 18px;
   }
 }
 
