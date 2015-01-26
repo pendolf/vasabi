@@ -7178,7 +7178,7 @@ header {
   position: absolute;
   bottom: 30px;
   left: 34px;
-  max-width: 75%;
+  max-width: 60%;
   margin-bottom: 15px;
 }
 
@@ -7258,6 +7258,10 @@ footer {
   .poster-language > p {
     font-size: 10px;
   }
+
+  .search-video {
+    padding-left: 149px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -7280,6 +7284,10 @@ footer {
   }
 }
 @media (min-width: 1200px) {
+  .search-video {
+    padding-left: 349px;
+  }
+
   .poster-title {
     bottom: 30px;
     left: 34px;

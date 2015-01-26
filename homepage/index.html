@@ -23,6 +23,12 @@
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
             <a class="navbar-brand" href="#">
               <img alt="Brand" src="http://vasabi.tv/static/img/logo-large.png?d8b9fbc52066">
             </a>
@@ -35,11 +41,7 @@
               <li><a href="#blog">Блог</a></li>
               <li><a href="#about">О нас</a></li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a class="text-red" href="#">Войти</a></li>
-              <li><a class="text-primary" href="#">EN</a></li>
-            </ul>
-            <form id="search-video" name="search-video" action="" class="navbar-form navbar-right">
+            <form id="search-video" name="search-video" action="" class="search-video navbar-form navbar-left" role="search">
               <div class="typeahead-container">
                 <div class="input-group">
                   <span class="typeahead-query">
@@ -54,6 +56,11 @@
                 </div>
               </div>
             </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="text-red" href="#">Войти</a></li>
+              <li><a class="text-primary" href="#">EN</a></li>
+            </ul>
+            
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
       </nav>

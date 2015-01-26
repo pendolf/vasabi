@@ -83,7 +83,7 @@ header {
   position: absolute;
   bottom: 30px;
   left: 34px;
-  max-width: 75%;
+  max-width: 60%;
   margin-bottom: 15px;
 }
 
@@ -153,10 +153,15 @@ footer {
   }
   .poster-language { top: 184px; }
   .poster-language > p { font-size: 10px; }
+
+  .search-video {
+    padding-left: 149px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
+
   .poster-title { 
     max-width: 74%;
     margin-bottom: 15px;
@@ -167,10 +172,20 @@ footer {
   }
   .poster-language { top: 258px; }
   .poster-language > p { font-size: 12px; }
+
+  .search-video {
+    // padding-left: 149px;
+  }
+
 }
 
 // Large devices (large desktops, 1200px and up)
 @media (min-width: $screen-lg-min) {
+
+  .search-video {
+    padding-left: 349px;
+  }
+
   .poster-title {
     bottom: 30px;
     left: 34px;
