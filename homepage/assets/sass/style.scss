@@ -79,26 +79,32 @@ header {
   background-color: #EEEEEE; 
 }
 
-.poster-header {
-  background: none no-repeat scroll 0 0 $vasabi-primary;
-  bottom: 14%;
-  left: 10%;
-  padding: 5px;
+.poster {
   position: absolute;
+}
+.poster-header {
+  position: relative;
+  background: $vasabi-primary;
   color: $vasabi-white;
-  font-family: ubuntulight, serif;
+  bottom: 60px;
+  left: 10px;
+  padding: 4px 6px;
+  font: 16px $font-family-base;
   text-transform: uppercase;
-  max-width: 230px;
+  // line-height: 22px;
+  // max-width: 80%;
   display: inline;
 }
 
 .poster-lang {
-  background: none repeat scroll 0 0 $vasabi-danger;
-    top: 84%;
-    left: 10%;
-    position: absolute;
-    padding: 5px;
-    color: $vasabi-white;
+  position: absolute;
+  background: $vasabi-danger;
+  color: $vasabi-white;
+  bottom: 20px;
+  left: 26px;
+  padding: 4px 4px;
+  font: 14px $font-family-base;
+  text-transform: uppercase;
 }
 
 .thumbnail{
