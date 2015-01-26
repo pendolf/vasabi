@@ -138,6 +138,13 @@ footer {
   color: darken($vasabi-purple, 20%)
 }
 
+.h1 {
+  font-size: 28px;
+}
+.h4 {
+  font-size: 12px;
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
@@ -157,6 +164,14 @@ footer {
   .search-video {
     padding-left: 149px;
   }
+
+  .h1 {
+    font-size: 36px;
+  }
+  .h4 {
+    font-size: 14px;
+  }
+
 }
 
 /* Medium devices (desktops, 992px and up) */
@@ -177,6 +192,12 @@ footer {
     // padding-left: 149px;
   }
 
+  .h1 {
+    font-size: 36px;
+  }
+  .h4 {
+    font-size: 14px;
+  }
 }
 
 // Large devices (large desktops, 1200px and up)
@@ -204,6 +225,15 @@ footer {
 
   .poster-language > p {
     font: 14px $font-family-base;
+  }
+
+  .h1 {
+    $font-size-h1: floor(($font-size-base * 2.6));
+    // font-size: 36px;
+  }
+  .h4 {
+    $font-size-h4: ceil(($font-size-base * 1.25));
+    // font-size: 14px;
   }
 }
 

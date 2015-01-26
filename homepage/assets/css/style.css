@@ -7237,6 +7237,14 @@ footer {
   color: #4d4d95;
 }
 
+.h1 {
+  font-size: 28px;
+}
+
+.h4 {
+  font-size: 12px;
+}
+
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
@@ -7262,6 +7270,14 @@ footer {
   .search-video {
     padding-left: 149px;
   }
+
+  .h1 {
+    font-size: 36px;
+  }
+
+  .h4 {
+    font-size: 14px;
+  }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
@@ -7281,6 +7297,14 @@ footer {
 
   .poster-language > p {
     font-size: 12px;
+  }
+
+  .h1 {
+    font-size: 36px;
+  }
+
+  .h4 {
+    font-size: 14px;
   }
 }
 @media (min-width: 1200px) {
@@ -7306,6 +7330,10 @@ footer {
 
   .poster-language > p {
     font: 14px "Ubuntu", sans-serif;
+  }
+
+  .h4 {
+    font-size: 14px;
   }
 }
 /*------------------------------------*\
