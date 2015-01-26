@@ -7174,28 +7174,34 @@ header {
   background-color: #EEEEEE;
 }
 
-.poster {
+.poster-title {
   position: absolute;
+  bottom: 34px;
+  left: 34px;
+  max-width: 70%;
+  margin-bottom: 15px;
 }
 
-.poster-header {
-  position: relative;
+.poster-title > h4 {
   background: #13CC98 !important;
+  box-shadow: 4px 0 0 0 #13CC98, -4px 0 0 0 #13CC98;
   color: #FFFFFF;
-  bottom: 60px;
-  left: 10px;
-  padding: 4px 6px;
+  padding: 4px 0px;
   font: 16px "Ubuntu", sans-serif;
   text-transform: uppercase;
+  line-height: 24px;
   display: inline;
 }
 
-.poster-lang {
+.poster-language {
   position: absolute;
+  top: 326px;
+  left: 30px;
+}
+
+.poster-language > p {
   background: #E34F42 !important;
   color: #FFFFFF;
-  bottom: 20px;
-  left: 26px;
   padding: 4px 4px;
   font: 14px "Ubuntu", sans-serif;
   text-transform: uppercase;
@@ -7231,6 +7237,12 @@ footer {
   color: #4d4d95;
 }
 
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+/*@media (min-width: @screen-sm-min) {}*/
+/* Medium devices (desktops, 992px and up) */
+/* Large devices (large desktops, 1200px and up) */
 /*------------------------------------*\
     Typeahead style
 \*------------------------------------*/
