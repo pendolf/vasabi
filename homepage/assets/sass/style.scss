@@ -42,26 +42,28 @@ $brand-success: #13CC98;
   color: $vasabi-primary;
 }
 
-#tabVideo {
-  border-bottom: 0;
-}
-#tabVideo li {
+#tabVideo li, 
+#tabSeries li {
   margin: 0;
 }
 
-#tabVideo, #tabVideo li > a {
+#tabVideo, #tabVideo li > a,
+#tabSeries, #tabSeries li > a{
   border-bottom: 0;
 }
 
-#tabVideo li > a {
+#tabVideo li > a, 
+#tabSeries li > a {
   color: $vasabi-grey;
 }
 
-#tabVideo li.active > a {
+#tabVideo li.active > a,
+#tabSeries li.active > a {
   color: $vasabi-info;
 }
 
-#tabVideo li > a:hover {
+#tabVideo li > a:hover,
+#tabSeries li > a:hover {
   color: $vasabi-info;
   background-color: $gray-lighter;
 }
@@ -99,7 +101,7 @@ header {
   position: absolute;
   bottom: 30px;
   left: 34px;
-  max-width: 60%;
+  max-width: 40%;
   margin-bottom: 15px;
 }
 

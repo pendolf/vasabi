@@ -92,7 +92,7 @@
       <!-- Nav tabs -->
       <div class="container">
         <div class="row">
-          <p class="text-center text-uppercase h1 text-primary">Видео</h2>
+          <p class="text-center text-uppercase h1 text-primary">Видео</p>
           <div class="col-lg-6 col-md-8 col-sm-10 col-md-offset-3 col-sm-offset-1">
             <ul class="center-block nav nav-tabs text-uppercase h4" role="tablist" id="tabVideo">
               <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Новинки</a></li>
@@ -221,19 +221,21 @@
       </div><!-- /. Tab panes video-posters -->
 
 
-      <div class="series-posters-head">
-        <div class="container">
-          <p class="text-center text-uppercase h1 text-primary">Новое в сериалах</h2>
-          <p class="text-center text-uppercase h4 video-link">
-            <a href="#"><span class="video-link-active"><i class="fa fa-film"></i> Эпизоды</span></a>
-            &nbsp
-            &nbsp
-            <a href="#"><i class="fa fa-file-text-o"></i> Дорожки</a>
-          </p>
+      <div class="container">
+        <div class="row">
+          <p class="text-center text-uppercase h1 text-primary">Новое в сериалах</p>
+          <div class="col-lg-4 col-md-5 col-sm-6 col-md-offset-4 col-sm-offset-3">
+            <ul class="center-block nav nav-tabs text-uppercase h4" role="tablist" id="tabSeries">
+              <li role="presentation" class="active"><a href="#episodes" aria-controls="episodes" role="tab" data-toggle="tab"><i class="fa fa-film"></i> Эпизоды</a></li>
+              <li role="presentation"><a href="#subtitles" aria-controls="subtitles"role="tab" data-toggle="tab"><i class="fa fa-file-text-o"></i> Дорожки</a></li>
+            </ul>
+          </div>
         </div>
-      </div> <!-- /.series-posters-head -->
-      <div class="series-posters">
-        <div class="container">
+      </div>
+
+      <div class="tab-content series-posters">
+        <div role="tabpanel" class="tab-pane active" id="episodes">
+          <div class="container">
             <br>
             <br>
 
@@ -331,18 +333,23 @@
                   </a>
               </div>
             </div>
+            <br/>
             <br/>
 
             <div class="row">         
               <div class="col-md-2 col-md-offset-5">
-                <a class="btn btn-danger text-uppercase" href="#" role="button">Больше новинок</a>
+                <a class="btn btn-danger text-uppercase" href="#" role="button">Больше видео</a>
               </div>
             </div>
             <br/>
             <br/>
-            
+          </div>
         </div>
-      </div> <!-- /.series-posters -->
+        <div role="tabpanel" class="tab-pane" id="subtitles">...пизда</div>
+      </div><!-- /. Tab panes series-posters -->
+
+
+
 
 
       <div class="container">

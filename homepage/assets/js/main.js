@@ -41,3 +41,8 @@ $('#tabVideo a').click(function (e) {
   e.preventDefault();
   $(this).tab('show');
 });
+
+$('#tabSeries a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});
