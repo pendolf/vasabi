@@ -35,3 +35,9 @@ $.typeahead({
     },
     debug: true
 });
+
+
+$('#tabVideo a').click(function (e) {
+  e.preventDefault();
+  $(this).tab('show');
+});

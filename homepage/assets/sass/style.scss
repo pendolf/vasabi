@@ -42,12 +42,28 @@ $brand-success: #13CC98;
   color: $vasabi-primary;
 }
 
-.video-link a {
+#tabVideo {
+  border-bottom: 0;
+}
+#tabVideo li {
+  margin: 0;
+}
+
+#tabVideo, #tabVideo li > a {
+  border-bottom: 0;
+}
+
+#tabVideo li > a {
   color: $vasabi-grey;
 }
 
-.video-link > a:hover, .video-link-active {
+#tabVideo li.active > a {
   color: $vasabi-info;
+}
+
+#tabVideo li > a:hover {
+  color: $vasabi-info;
+  background-color: $gray-lighter;
 }
 
 .header-tag {

@@ -88,22 +88,25 @@
 
 
     <div class="site-content">
-      <div class="video-posters-head">
-        <div class="container">
+      
+      <!-- Nav tabs -->
+      <div class="container">
+        <div class="row">
           <p class="text-center text-uppercase h1 text-primary">Видео</h2>
-          <p class="text-center text-uppercase h4 video-link">
-            <a href="#"><span class="video-link-active"><i class="fa fa-star"></i> Новинки</span></a>
-            &nbsp
-            &nbsp
-            <a href="#"><i class="fa fa-thumbs-up"></i> Популярное</a>
-            &nbsp
-            &nbsp
-            <a href="#"><i class="fa fa-bullhorn"></i> Рекомендуем</a>
-          </p>
+          <div class="col-lg-6 col-md-8 col-sm-10 col-md-offset-3 col-sm-offset-1">
+            <ul class="center-block nav nav-tabs text-uppercase h4" role="tablist" id="tabVideo">
+              <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-star"></i> Новинки</a></li>
+              <li role="presentation"><a href="#popular" aria-controls="popular"role="tab" data-toggle="tab"><i class="fa fa-thumbs-up"></i> Популярное</a></li>
+              <li role="presentation"><a href="#recommended" aria-controls="recommended" role="tab" data-toggle="tab"><i class="fa fa-bullhorn"></i> Рекомендуем</a></li>
+            </ul>
+          </div>
         </div>
-      </div> <!-- /.video-posters-head -->
-      <div class="video-posters">
-        <div class="container">
+      </div>
+
+      <!-- Tab panes -->
+      <div class="tab-content video-posters">
+        <div role="tabpanel" class="tab-pane active" id="home">
+          <div class="container">
             <br>
             <br>
 
@@ -201,6 +204,7 @@
                   </a>
               </div>
             </div>
+            <br/>
             <br/>
 
             <div class="row">         
@@ -210,9 +214,11 @@
             </div>
             <br/>
             <br/>
-            
+          </div>
         </div>
-      </div> <!-- /.video-posters -->
+        <div role="tabpanel" class="tab-pane" id="popular">...пизда</div>
+        <div role="tabpanel" class="tab-pane" id="recommended">...джигурда</div>
+      </div><!-- /. Tab panes video-posters -->
 
 
       <div class="series-posters-head">

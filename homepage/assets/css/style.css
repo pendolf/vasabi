@@ -7133,12 +7133,29 @@ button.close {
   color: #13CC98 !important;
 }
 
-.video-link a {
+#tabVideo {
+  border-bottom: 0;
+}
+
+#tabVideo li {
+  margin: 0;
+}
+
+#tabVideo, #tabVideo li > a {
+  border-bottom: 0;
+}
+
+#tabVideo li > a {
   color: #999999;
 }
 
-.video-link > a:hover, .video-link-active {
+#tabVideo li.active > a {
   color: #339AB8;
+}
+
+#tabVideo li > a:hover {
+  color: #339AB8;
+  background-color: #eeeeee;
 }
 
 .header-tag {
@@ -7242,7 +7259,7 @@ footer {
 }
 
 .h4 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Extra small devices (phones, less than 768px) */
